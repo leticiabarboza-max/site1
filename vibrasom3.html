@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>VibraSom</title>
+    <style>
+        * {box-sizing: border-box;}
+
+        body{
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: white;
+        }
+
+        .cabecalho{
+            padding: 20px;
+            background: linear-gradient(90deg, #1DB954, #121212);
+        }
+
+        .cabecalho img{
+            border-radius: 8px;
+        }
+
+        .subcabecalho{
+            padding: 14px 20px;
+            background-color: #1e1e1e;
+            color: #dcdcdc;
+        }
+
+        .container{
+            display: flex;
+            width: 100%;
+            margin: 0;
+            padding: 16px;
+            gap: 16px;
+        }
+
+        .esquerda, .direita{
+            width: 180px;
+            padding: 16px;
+            background-color: #1e1e1e;
+            border-radius: 12px;
+        }
+
+        .principal{
+            width: 850px;
+            padding: 20px;
+            background: linear-gradient(180deg, #232323, #181818);
+            border-radius: 12px;
+            flex: 1;
+            min-width: 0;
+        }
+
+        .principal h2{
+            margin-top: 0;
+            color: #1DB954;
+        }
+
+        .musicas{
+            width: 100%;
+            padding: 20px;
+        }
+
+        .musicas h2{
+            color: #1DB954;
+            margin-bottom: 8px;
+        }
+
+        .artistas-container{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            padding: 0 20px 20px 20px;
+        }
+
+        .artista{
+            background-color: #1e1e1e;
+            width: 220px;
+            padding: 16px;
+            border-radius: 16px;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .artista:hover{
+            transform: scale(1.03);
+        }
+
+        .artista img{
+            width: 100%;
+            border-radius: 12px;
+            margin-bottom: 10px;
+        }
+
+        .rodape{
+            padding: 20px;
+            background: #181818;
+            margin-top: 20px;
+            text-align: center;
+            color: #dcdcdc;
+        }
+
+        @media(max-width: 900px){
+            .container{
+                flex-wrap: wrap;
+            }
+            .esquerda{
+                width: 180px;
+                flex: 0 0 180px;
+            }
+            .principal{
+                flex: 1 1 0;
+                width: auto;
+                min-width: 280px;
+            }
+            .direita{
+                width: 100%;
+                flex: 0 0 100%;
+            }
+        }
+
+        @media (max-width: 600px){
+            .container{
+                flex-direction: column;
+            }
+            .esquerda, .principal, .direita{
+                width: 100%;
+                flex: 0 0 auto;
+            }
+
+            .artistas-container{
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .artista{
+                width: 100%;
+                max-width: 320px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="cabecalho">
+    <img src="imagens/logonew.jpg" width="60" style="vertical-align: middle;">
+    <strong style="font-size: 28px;"> VibraSom</strong> - Sua trilha sonora começa aqui!
+</div>
+
+<div class="subcabecalho">
+    <strong>By: Leticia Barboza</strong> - Assinar o Premium | Mais informações | Buscar mais
+</div>
+
+<div class="container">
+    <div class="esquerda">
+        <strong>Saiba mais</strong>
+        <div><br> <span style='font-size:20px;'>&#127925;</span> Descubra novas músicas</div>
+        <div><br> <span style='font-size:20px;'>&#128194;</span> Crie sua playlist</div>
+        <div><br> <span style='font-size:20px;'>&#127775;</span> Siga seus artistas preferidos</div>
+    </div>
+
+    <div class="principal">
+        <h2>Bem-vindo ao VibraSom</h2>
+        <p>Aqui, cada nota conta uma história e cada batida conecta pessoas.
+        Este é o lugar onde você descobre novos sons, revive clássicos e mergulha em
+        experiências únicas que só a música pode oferecer.</p>
+
+        <p>Seja qual for o seu estilo, o seu momento ou o seu humor, há sempre uma trilha perfeita esperando por você.</p>
+        <p><strong>Sinta, vibre e cante aqui no VibraSom!</strong></p>
+    </div>
+
+    <div class="direita">
+        <strong>Mais informações</strong>
+        <div><br> <span style='font-size:20px;'>&#128247;</span> Entre em contato</div>
+        <div><br> <span style='font-size:20px;'>&#128196;</span> Termos de uso</div>
+        <div><br> <span style='font-size:20px;'>&#128274;</span> Política e privacidade</div>
+    </div>
+</div>
+
+<div class="musicas">
+    <h2>Top 14 Artistas mais ouvidos</h2>
+    <p>Os 14 artistas mais ouvidos do momento refletem as tendências que estão dominando o cenário musical global. De hits virais a álbuns aclamados, essa lista reúne nomes que conquistaram milhões de plays e fãs ao redor do mundo. Seja no pop, rap, eletrônico ou outros gêneros, esses artistas estão ditando o ritmo da indústria e marcando presença nas principais plataformas de streaming. Explore o ranking e descubra quem está no topo</p>
+</div>
+
+<div class="artistas-container">
+    <div class="artista">
+        <img src="imagens/luansantana.jpg">
+        <strong>Luan Santana</strong>
+        <p><i>Top 1</i></p>
+    </div>
+
+    <div class="artista">
+        <img src="imagens/jorgem.jpg">
+        <strong>Jorge e Mateus</strong>
+        <p><i>Top 2</i></p>
+    </div>
+
+    <div class="artista">
+        <img src="imagens/zeneto.jpg">
+        <strong>Zé Neto e Cristiano</strong>
+        <p><i>Top 3</i></p>
+    </div>
+
+    <div class="artista">
+        <img src="imagens/damiano.jpg">
+        <strong>Damiano David</strong>
+        <p><i>Top 4</i></p>
+    </div>
+
+    <div class="artista">
+        <img src="imagens/veigh.jpg">
+        <strong>Veigh</strong>
+        <p><i>Top 5</i></p>
+    </div>
+    <div class="artista">
+        <img src="imagens/henrique.jpg">
+        <strong>Henrique e Juliano</strong>
+        <p><i>Top 6</i></p>
+    </div>
+
+    <div class="artista">
+        <img src="imagens/elvis.jpg">
+        <strong>Elvis Presley</strong>
+        <p><i>Top 7</i></p>
+    </div>
+
+     <div class="artista">
+        <img src="imagens/panda.jpg">
+        <strong>Panda</strong>
+        <p><i>Top 8</i></p>
+    </div>
+
+     <div class="artista">
+        <img src="imagens/marilia.jpg">
+        <strong>Marilia Mendonça</strong>
+        <p><i>Top 9</i></p>
+    </div>
+
+    <div class="artista">
+        <img src="imagens/articmonkeys.jpg">
+        <strong>Artic Monkeys</strong>
+        <p><i>Top 10</i></p>
+    </div>
+
+    <div class="artista">
+        <img src="imagens/legiao.jpg">
+        <strong>Legião Urbana</strong>
+        <p><i>Top 11</i></p>
+    </div>
+
+    <div class="artista">
+        <img src="imagens/matogrosso.jpg">
+        <strong>Matogrosso & Mathias</strong>
+        <p><i>Top 12</i></p>
+    </div>
+
+    <div class="artista">
+        <img src="imagens/cold.jpg">
+        <strong>Coldplay</strong>
+        <p><i>Top 13</i></p>
+    </div>
+
+    <div class="artista">
+        <img src="imagens/fernando.jpg">
+        <strong>Fernando & Sorocaba</strong>
+        <p><i>Top 14</i></p>
+    </div>
+
+</div>
+
+<div class="musicas">
+    <h2>Músicas mais ouvidas</h2>
+    <p>Confira as músicas mais ouvidas do momento e mergulhe nos maiores sucessos que estão dominando as playlists. 
+    Aqui você encontra os hits em alta, os artistas mais escutados e as faixas que estão marcando tendência no cenário musical. 
+    Uma seleção feita para quem ama estar sempre conectado com o melhor da música.</p>
+</div>
+
+<div class="artistas-container">
+    <div class="artista">
+        <img src="imagens/teseguro.jpg">
+        <strong>Eu Te Seguro</strong>
+        <p><i>Panda</i></p>
+    </div>
+       
+    <div class="artista">
+        <img src="imagens/sublime.jpg">
+        <strong>Sublime Renúncia</strong>
+        <p><i>Leandro & Leonardo</i></p>
+    </div>
+
+    <div class="artista">
+        <img src="imagens/romantico.jpg">
+        <strong>Romântico Anônimo</strong>
+        <p><i>Marcos & Belutti</i></p>
+    </div>
+
+    <div class="artista">
+        <img src="imagens/meunovomundo.jpg">
+        <strong>Meu novo mundo</strong>
+        <p><i>CBJR</i></p>
+    </div>
+
+    <div class="artista">
+        <img src="imagens/numero.jpg">
+        <strong>Meu Número</strong>
+        <p><i>Feat Jorge & Mateus</i></p>
+    </div>
+
+    <div class="artista">
+        <img src="imagens/diego.jpg">
+        <strong>Tubarões</strong>
+        <p><i>Diego & Victor Hugo</i></p>
+    </div>
+
+    <div class="artista">
+        <img src="imagens/bembq.jpg">
+        <strong>Bem Querer</strong>
+        <p><i>Panda</i></p>
+    </div>
+
+    <div class="artista">
+        <img src="imagens/sparks.jpg">
+        <strong>Sparks</strong>
+        <p><i>ColdPlay</i></p>
+    </div>
+
+    <div class="artista">
+        <img src="imagens/teesperando.jpg">
+        <strong>Te Esperando</strong>
+        <p><i>Luan Santana</i></p>
+    </div>
+
+    <div class="artista">
+        <img src="imagens/sonhacomigp.jpg">
+        <strong>Sonha Comigo</strong>
+        <p><i>Zé Neto & Cristiano</i></p>
+    </div>
+
+     <div class="artista">
+        <img src="imagens/god.jpg">
+        <strong>God is</strong>
+        <p><i>Kanye West</i></p>
+    </div>
+
+    <div class="artista">
+        <img src="imagens/sailor.jpg">
+        <strong>Sailor Song</strong>
+        <p><i>Gigi Perez</i></p>
+    </div>
+
+    <div class="artista">
+        <img src="imagens/tevivp.webp">
+        <strong>Te Vivo</strong>
+        <p><i>Luan Santana</i></p>
+    </div>
+
+    <div class="artista">
+        <img src="imagens/elequer.jpg">
+        <strong>Ele Quer Ser Eu</strong>
+        <p><i>Henrique & Juliano</i></p>
+    </div>
+
+</div>
+<div class="rodape">
+    <span style='font-size:20px;'>&#128222;</span> (49)99993-2754 | <span style='font-size:20px;'>&#128196;</span> Acessar plano Premium | <span style='font-size:20px;'>&#128247;</span> @vibrasom.br
+
+</body>
+</html>
